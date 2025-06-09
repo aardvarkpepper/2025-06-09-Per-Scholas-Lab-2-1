@@ -6,23 +6,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <title>Reach Out</title>
         
         <link rel="stylesheet" href="index.css">
     </head>
     <body class="contact-page">
-        <div id="main">
+        <main id="main">
             <!-- Form section -->
             <div class="contact-form-section">
-                <form>
-                    <h2 class="contact-form-heading">Reach <span>Out</span></h2>
+                <form aria-label="Send us a message.">
+                    <h1 class="contact-form-heading">Reach <span>Out</span></h1>
                     <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</div>
-                    <input class="contact-input" type="text" placeholder="Full name" />
-                    <input class="contact-input" type="text" placeholder="Email" />
-                    <textarea class="contact-textarea" rows="4" cols="50" placeholder="Your message..."></textarea>
-                    <button class="contact-submit-button" type="button" onclick="submitForm()">Done 🎉</button>
+                    <label for="fullname">Full Name</label>
+                    <input class="contact-input" type="text" id="fullname" placeholder="Santa Claus" />
+                    <label for="enteremail">Email</label>
+                    <input class="contact-input" type="text" id="enteremail" placeholder="santaclaus@northpole.org" />
+                    <label for="entermessage">Message</label>
+                    <textarea class="contact-textarea" rows="4" cols="50" placeholder="I'll admit I wasn't into this whole Internet thing at first, until I found out about the cookies." id="entermessage"></textarea>
+                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send Message 🎉</button>
                 </form>
-                <img class="contact-image" src="images/connect.png" />
+                <img class="contact-image" src="images/connect.png" alt="Human hand reaching up to robot hand, similar to the Creation of Adam fresco by Michaelangelo in the Sistine Chapel." />
             </div>
-        </div>
+        </main>
     </body>
 </html>
